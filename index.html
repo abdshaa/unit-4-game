@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crystals Collector</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/javascrpit/game.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <!-- <div class="transbox"> -->
+      <h1>Crystals Collector</h1>
+      <!-- </div> -->
+    </div>
+    <div class="instructions">
+      <h3>How to play</h3>
+      <ol>
+        <li>
+          You will be given a random number at the start of the game.
+        </li>
+        <li>There are four crystals below</li>
+        <ul>
+          <li id="blue">Blue</li>
+          <li id="green">Green</li>
+          <li id="red">Red</li>
+          <li id="yellow">Yellow</li>
+        </ul>
+        <li>
+          By clicking on a crystal, you will add specific amount of points to
+          your total score.
+        </li>
+        <li>
+          You win the game by matching your total score to the random number.
+        </li>
+        <li>You lose the game if your total score goes above the number.</li>
+        <li>
+          The value of each cyrstal is hidden form you until you click on it.
+          Each time when the game starts, the game will change the values of
+          each crystal.
+        </li>
+      </ol>
+    </div>
+    <div class="numberToMatch">
+      <h4>
+        Number to Get:
+        <span id="randomNumber"></span>
+      </h4>
+    </div>
+    <div class="winsAndLosses">
+      <h4>
+        Wins:
+        <span id="numberWins"></span>
+        Losses:
+        <span id="numberLosses"></span>
+      </h4>
+    </div>
+    <div class="gems">
+      <img
+        src="assets/images/chrysocolla-healing-crystal.jpg"
+        style="width:200px;height:200px;"
+        class="gemImage"
+        id="Blue"
+      />
+      <img
+        src="assets/images/greendownload.jpg"
+        style="width:200px;height:200px;"
+        class="gemImage"
+        id="Green"
+      />
+      <img
+        src="assets/images/redd.png"
+        style="width:200px;height:200px;"
+        class="gemImage"
+        id="Red"
+      />
+      <img
+        src="assets/images/transparent-rough-yellow-quartz-citrine-260nw-433285969.jpg"
+        style="width:200px;height:200px;"
+        class="gemImage"
+        id="Yellow"
+      />
+    </div>
+    <div class="userTotal">
+      <h4>Total Score: <span id="finalTotal"></span></h4>
+    </div>
+  </body>
+</html>
